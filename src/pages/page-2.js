@@ -10,7 +10,7 @@ const calcPercent = (value, total) => Math.round(value/total * 100)
 
 const SecondPage = () => {
 
-  const [user,setUser] =useState(localStorage.getItem('user'))
+  const [user,setUser] =useState(typeof window !== 'undefined' && window.localStorage.getItem('user'))
   const [file,setFile]=useState('')
   const [percent,setPercent]=useState(0)
   const [selectedFileName,setSelectedFileName]=useState('')

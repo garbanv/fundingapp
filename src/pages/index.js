@@ -25,7 +25,7 @@ const IndexPage = () => {
       // console.log('Well done!');
       // console.log('User profile', response.data.user);
       // console.log('User token', response.data.jwt);
-      localStorage.setItem('user', response.data.user.username);
+      typeof window !== 'undefined' && window.localStorage.setItem('user', response.data.user.username);
       response.data.jwt ? navigate("/page-2") : console.log("error")
     })
     .catch(error => {
