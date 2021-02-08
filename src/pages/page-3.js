@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import datReportImg from '../images/dataReport.png'
 
 export default function DownloadPage() {
-    const [user,setUser] = typeof window !== 'undefined' && window.localStorage.getItem('user')
+    const [user,setUser] = useState(typeof window !== 'undefined' && window.localStorage.getItem('user'))
     const [dateFrom,setDateFrom]=useState(false)
     const [dateTo,setDateTo]=useState(false)
     const [typeOfReport,setTypeOfReport]=useState(false)
