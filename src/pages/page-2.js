@@ -23,14 +23,14 @@ const SecondPage = () => {
 
     const upload_file = await axios({
         method:'POST',
-        url:'http://localhost:1337/upload',
+        url:'https://fundingwebappbackend-dewbn.ondigitalocean.app/upload',
         data:data,
         onUploadProgress: function (progress) {
           setPercent(calcPercent(progress.loaded,progress.total))
         },
     })
     const response = await JSON.parse(upload_file.request.response)
-
+    console.log(response)
     navigate('/page-3')
 
 

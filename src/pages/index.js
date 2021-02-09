@@ -5,6 +5,7 @@ import Logo from '../images/logo.png'
 import Layout from "../components/layout"
 import axios from 'axios';
 import image1 from '../images/undraw_Upload_re_pasx.png';
+import Loader from '../components/Loader'
 
 const IndexPage = () => {
   const [userData, setUserData] = useState({
@@ -12,15 +13,18 @@ const IndexPage = () => {
     password: "",
   })
 
+  const [isLoading,setIsLoading]=useState(false)
+
   const handleLogin = () =>{
+    setIsLoading(true)
     // Request API.
     axios
-    .post('https://bhbackend.herokuapp.com/auth/local', {
+    .post('https://fundingwebappbackend-dewbn.ondigitalocean.app/auth/local', {
       identifier: userData.identifier,
       password: userData.password,
     })
     .then(response => {
-      console.log(response)
+
       // Handle success.
       // console.log('Well done!');
       // console.log('User profile', response.data.user);
@@ -62,7 +66,7 @@ const IndexPage = () => {
                 }}/>
               </Form.Group>
               <Button variant="primary" onClick={handleLogin}>
-                Submit
+                {isLoading ? <Loader/> : 'Login'}
               </Button>
             </Form>
           </Col> 

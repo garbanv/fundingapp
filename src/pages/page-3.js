@@ -10,12 +10,7 @@ export default function DownloadPage() {
     const [dateTo,setDateTo]=useState(false)
     const [typeOfReport,setTypeOfReport]=useState(false)
 
-    // const showDownloadBtn = ()=> {
-    //     if(dateFrom && dateTo && typeOfReport) {
-    //         console.log('todos true')
-    //         (<div className="btn text-uppercase bg-purple d-block" onClick={downloadFile}>Upload File</div>)
-    //     }
-    // }
+   
 
     const downloadFile=()=>{
     alert("Downloading File")
