@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 import {Link} from 'gatsby'
-import {Button, Container, Col, Row, Form} from 'react-bootstrap'
+import {Button, Container, Col, Row, Form,ListGroup} from 'react-bootstrap'
 import Layout from '../components/layout'
 import datReportImg from '../images/dataReport.png'
 
@@ -23,8 +23,16 @@ export default function DownloadPage() {
     
                 <Row>
                     <Col md={6} className="p-5">
-                    <h3 className="text-center">You are almost done</h3>
-                <p className="text-center">Please complete options to download your report</p>
+                  
+                <h3>How to use:</h3>
+                <small>1. Select the dates you need</small>
+                <small> 2. Choose on the the four reports:</small>
+                <ListGroup variant="flush">
+                <ListGroup.Item><small><strong>Daily:</strong> A report for each of the dates you select: For entering into the online T2 system</small></ListGroup.Item>
+                <ListGroup.Item><small><strong>Weekly:</strong> The funding report summary that needs to be entered into T2 once a week</small></ListGroup.Item>
+                <ListGroup.Item><small><strong>Team:</strong> A deck of key data points that will help your team review planning and impacts</small></ListGroup.Item>
+                <ListGroup.Item><small><strong>Dashboard:</strong> A set of embeddable widget codes that you can add to your website</small></ListGroup.Item>
+                </ListGroup>
                         <Form>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>From</Form.Label>
@@ -58,7 +66,7 @@ export default function DownloadPage() {
 
                     <Col md={6} className="bg-purple d-flex justify-content-center align-items-center py-4">
                     <div className="text-center p-5">
-                        <h5 className="text-white"></h5>
+                        <h5 className="text-white">You are almost done with your report</h5>
                         <img src={datReportImg}/>
                     </div>
                     </Col>
