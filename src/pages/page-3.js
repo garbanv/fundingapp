@@ -58,8 +58,8 @@ export default function DownloadPage() {
                         <option>Dashboard</option>
                         </Form.Control>
                     </Form.Group>
-                       
-                    <div className="btn text-uppercase bg-purple d-block" onClick={downloadFile}>Download Report</div>
+                    <a href="https://res.cloudinary.com/demo/image/upload/example_pdf.pdf" className="btn text-uppercase bg-purple d-block" download>DOWNLOAD REPORT</a>
+                    {/* <div className="btn text-uppercase bg-purple d-block" onClick={downloadFile}>Download Report</div> */}
                         </Form>
 
                     </Col>
