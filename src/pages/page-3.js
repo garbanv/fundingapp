@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {Link} from 'gatsby'
 import {Button, Container, Col, Row, Form,ListGroup} from 'react-bootstrap'
 import Layout from '../components/layout'
-import datReportImg from '../images/dataReport.png'
+import datReportImg from '../images/dataReportImg.png'
 
 export default function DownloadPage() {
     const [user,setUser] = useState(typeof window !== 'undefined' && window.localStorage.getItem('user'))

@@ -3,7 +3,7 @@ import { Link, navigate } from "gatsby"
 import {Container, Row, Col, Button, Form,ProgressBar} from 'react-bootstrap'
 import axios from 'axios'
 import Layout from "../components/layout"
-import fileUploadImg from "../images/fileUpload.png"
+import fileUploadImg from "../images/fileUploadImg.png"
 
 
 const calcPercent = (value, total) => Math.round(value/total * 100)

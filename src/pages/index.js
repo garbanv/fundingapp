@@ -4,7 +4,7 @@ import { Container, Row, Col,Button, Form } from "react-bootstrap"
 import Logo from '../images/logo.png'
 import Layout from "../components/layout"
 import axios from 'axios';
-import image1 from '../images/undraw_Upload_re_pasx.png';
+import image1 from '../images/loginImg.png';
 import Loader from '../components/loader'
 
 const IndexPage = () => {
