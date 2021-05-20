@@ -49,7 +49,7 @@ const IndexPage = () => {
         <Col md={6} className=" p-5 bg-white">
             <Row>
             <div className="pt-1 pb-3 text-center "> 
-            <img src="https://nblch.org/wp-content/themes/nblca/images/logo_full.svg" className="" style={{maxWidth:250 +'px'}}/>
+            <img src="https://nblch.org/wp-content/uploads/2021/02/black-health-logo-header-250.png" className="" style={{maxWidth:250 +'px'}}/>
             </div>  
             </Row>
             <Form>
